@@ -1,1 +1,29 @@
+<?php
+/**
+ * Genial Framework (https://genial.tech/php/genial-framework/)
+ *
+ * @link      https://github.com/Genial-Framework/Genial-Framework for the canonical source repository
+ * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
+ * @license   https://genial.tech/license/new-bsd New BSD License
+ */
+namespace Genial\Session;
+/**
+ * ConfigAdapter
+ */
+class ConfigAdapter {
+    /**
+     * __invoke()
+     *
+     * return array[] Return the session configuration array
+     */
+    public function __invoke() {
+        if (!function_exists('env')) {
+		  throw new BadFunctionCallException(sprintf(
+				'"%s" expects "env()" function to be defined.',
+				__METHOD__
+			));
+		}
+		return self::format(env('session'));	
+    }
+}
 
