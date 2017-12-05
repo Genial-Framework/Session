@@ -10,6 +10,6 @@ namespace Genial\Session;
 /**
  * Handler
  */
-class Handler extends Manager {
+class Handler extends Manager implements HandlerInterface {
   
 }
