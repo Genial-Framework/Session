@@ -10,6 +10,7 @@ namespace Genial\Session;
 use Genial\Session\Exception\BadMethodCallException;
 use Genial\Session\Exception\RuntimeException;
 use Genial\Session\Exception\UnexpectedValueException;
+use Genial\HelperClass\Utils;
 /**
  * Handler
  */
