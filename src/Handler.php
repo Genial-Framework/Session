@@ -14,44 +14,44 @@ use Genial\Session\Exception\UnexpectedValueException;
  * Handler
  */
 class Handler extends Manager implements HandlerInterface {
-	/**
-	 * set()
-	 *
-	 * Set a session variable
-	 *
-	 * @param string|null $name The name of the session variable
-	 * @param mixed $value The value of the session variable
-	 *
-	 * @throws BadMethodCallException If the $name argument is missing
-	 * @throws RuntimeException If a session is not running
-	 * @throws UnexpectedValueException If the $name argument is empty
-	 *
-	 * @return void
-	 */
-	public function set(string $name = null, $value) {
-		if (!$this->exist()) {
-			throw new RuntimeException(sprintf(
-				'"%s" expects a running session.',
-				__METHOD__
-			));
-		}
-		if (!$name) {
-			throw new BadMethodCallException(sprintf(
-				'"%s" expects the "$name" argument.',
-				__METHOD__
-			));
-		}
-		$name = trim($name);
-		if (empty($name) || $name == '') {
-			throw new UnexpectedValueException(sprintf(
-				'"%s" expects "$name" to not be empty.',
-				__METHOD__
-			));
-		}
-		$_SESSION[$name] = Utils::encode($value, false);
-	}
-	/**
-	 * get()
+    /**
+     * set()
+     *
+     * Set a session variable
+     *
+     * @param string|null $name The name of the session variable
+     * @param mixed $value The value of the session variable
+     *
+     * @throws BadMethodCallException If the $name argument is missing
+     * @throws RuntimeException If a session is not running
+     * @throws UnexpectedValueException If the $name argument is empty
+     *
+     * @return void
+     */
+    public function set(string $name = null, $value) {
+        if (!$this->exist()) {
+            throw new RuntimeException(sprintf(
+                '"%s" expects a running session.',
+                __METHOD__
+            ));
+        }
+        if (!$name) {
+            throw new BadMethodCallException(sprintf(
+                '"%s" expects the "$name" argument.',
+                __METHOD__
+            ));
+        }
+        $name = trim($name);
+        if (empty($name) || $name == '') {
+            throw new UnexpectedValueException(sprintf(
+                '"%s" expects "$name" to not be empty.',
+                __METHOD__
+            ));
+        }
+        $_SESSION[$name] = Utils::encode($value, false);
+    }
+    /**
+     * get()
 	 *
 	 * Get a session variable
 	 *
