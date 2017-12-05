@@ -7,9 +7,10 @@
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
 namespace Genial\Session;
+use Traversable;
 /**
  * Manager
  */
-class Manager extends Utils {
+class Manager {
    
 }
