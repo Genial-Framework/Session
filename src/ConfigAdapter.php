@@ -15,7 +15,9 @@ class ConfigAdapter {
     /**
      * __invoke()
      *
-     * return array[] Return the session configuration array
+     * @throws BadFunctionCallException If the env() function is undefined 
+     *
+     * @return array[] Returns the session configuration array
      */
     public function __invoke() {
         if (!function_exists('env')) {
