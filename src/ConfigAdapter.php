@@ -7,6 +7,7 @@
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
 namespace Genial\Session;
+use Genial\Session\Exception\BadFunctionCallException;
 /**
  * ConfigAdapter
  */
@@ -18,12 +19,13 @@ class ConfigAdapter {
      */
     public function __invoke() {
         if (!function_exists('env')) {
-		  throw new BadFunctionCallException(sprintf(
-				'"%s" expects "env()" function to be defined.',
-				__METHOD__
-			));
-		}
-		return self::format(env('session'));	
+            throw new BadFunctionCallException(sprintf(
+                '"%s" expects "env()" function to be defined.',
+                __METHOD__
+            ));
+        }
+        return self::format(env('session'));	
     }
+	
 }
 
