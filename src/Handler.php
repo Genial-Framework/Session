@@ -95,7 +95,7 @@ class Handler extends Manager implements HandlerInterface {
 	 * Delete a session variable
 	 *
 	 * @param string|null $name The name of the session variable
-	 *
+     *
 	 * @throws BadMethodCallException If the $name argument is missing
 	 * @throws RuntimeException If a session is not running
 	 * @throws UnexpectedValueException If the $name argument is empty
