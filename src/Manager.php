@@ -13,5 +13,17 @@ use Traversable;
  * Manager
  */
 class Manager {
-   
+    /**
+     * exist()
+     *
+     * Check to see if a session is running
+     *
+     * @return bool Return true if a session exists and false if it does not
+     */
+    public function exist() {
+        if (php_sapi_name() !== 'cli') {
+            return session_status() === PHP_SESSION_ACTIVE ? true : false;
+        }
+        return false;
+    }
 }
