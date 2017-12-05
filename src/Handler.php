@@ -16,12 +16,11 @@ use Genial\HelperClass\Utils;
  */
 class Handler extends Manager implements HandlerInterface {
     /**
-     * set()
+     * delete()
      *
-     * Set a session variable
+     * Delete a session variable
      *
      * @param string|null $name The name of the session variable
-     * @param mixed $value The value of the session variable
      *
      * @throws BadMethodCallException If the $name argument is missing
      * @throws RuntimeException If a session is not running
@@ -29,7 +28,7 @@ class Handler extends Manager implements HandlerInterface {
      *
      * @return void
      */
-    public function set(string $name = null, $value) {
+    public function delete(string $name = null) {
         if (!$this->exist()) {
             throw new RuntimeException(sprintf(
                 '"%s" expects a running session.',
@@ -49,7 +48,9 @@ class Handler extends Manager implements HandlerInterface {
                 __METHOD__
             ));
         }
-        $_SESSION[$name] = Utils::encode($value, false);
+        if (isset($_SESSION[$name])) {
+            unset($_SESSION[$name]);
+        }
     }
     /**
      * get()
@@ -91,11 +92,12 @@ class Handler extends Manager implements HandlerInterface {
         return $defaultReturnValue;
     }
     /**
-     * delete()
+     * set()
      *
-     * Delete a session variable
+     * Set a session variable
      *
      * @param string|null $name The name of the session variable
+     * @param mixed $value The value of the session variable
      *
      * @throws BadMethodCallException If the $name argument is missing
      * @throws RuntimeException If a session is not running
@@ -103,7 +105,7 @@ class Handler extends Manager implements HandlerInterface {
      *
      * @return void
      */
-    public function delete(string $name = null) {
+    public function set(string $name = null, $value) {
         if (!$this->exist()) {
             throw new RuntimeException(sprintf(
                 '"%s" expects a running session.',
@@ -123,8 +125,6 @@ class Handler extends Manager implements HandlerInterface {
                 __METHOD__
             ));
         }
-        if (isset($_SESSION[$name])) {
-            unset($_SESSION[$name]);
-        }
+        $_SESSION[$name] = Utils::encode($value, false);
     }
 }
