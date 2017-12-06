@@ -21,6 +21,8 @@ final class BadFunctionCallExceptionTest extends TestCase
     /**
      * exceptionTest().
      *
+     * @throws BadFunctionCallException
+     *
      * @return void
      */
     public function exceptionTest()
