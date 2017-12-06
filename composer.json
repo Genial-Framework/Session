@@ -30,5 +30,14 @@
         "genial-framework/mongodb": "1.*",
         "genial-framework/database": "1.*",
         "genial-framework/cyptography": "1.*"
-    }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
