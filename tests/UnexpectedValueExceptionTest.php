@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\UnexpectedValueException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * UnexpectedValueExceptionTest
+ * UnexpectedValueExceptionTest.
  */
-final class UnexpectedValueExceptionTest extends TestCase {
+final class UnexpectedValueExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws UnexpectedValueException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(UnexpectedValueException::class);
+
         throw new UnexpectedValueException();
     }
 }

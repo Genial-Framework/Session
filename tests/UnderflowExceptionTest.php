@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\UnderflowException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * UnderflowExceptionTest
+ * UnderflowExceptionTest.
  */
-final class UnderflowExceptionTest extends TestCase {
+final class UnderflowExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws UnderflowException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(UnderflowException::class);
+
         throw new UnderflowException();
     }
 }
