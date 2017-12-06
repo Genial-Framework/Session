@@ -9,10 +9,8 @@
  */
 
 namespace Genial\Session\Tests;
-
 use Genial\Session\Exception\BadFunctionCallException;
 use PHPUnit\Framework\TestCase;
-
 /**
  * BadFunctionCallExceptionTest.
  */
