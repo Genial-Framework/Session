@@ -11,7 +11,7 @@ namespace Genial\Session\Tests;
 use PHPUnit\Framework\TestCase;
 use Genial\Session\Exception\OutOfBoundsException;
 /**
- * OutOfBoundsException
+ * OutOfBoundsExceptionTest
  */
 final class OutOfBoundsExceptionTest extends TestCase {
     /**
