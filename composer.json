@@ -1,6 +1,6 @@
 {
     "name": "genial-framework/session",
-    "description": "A short description of what your package does",
+    "description": "A Simple, Fast, and Secure Session component from Genial!",
     "require": {
         "php": "^7.0",
         "genial-framework/env": "1.*",
