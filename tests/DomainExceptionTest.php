@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\DomainException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * DomainExceptionTest
+ * DomainExceptionTest.
  */
-final class DomainExceptionTest extends TestCase {
+final class DomainExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws BadMethodCallException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(DomainException::class);
+
         throw new DomainException();
     }
 }
