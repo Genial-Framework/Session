@@ -14,12 +14,12 @@ use Genial\Session\Exception\LengthException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * LengthExceptionTest
+ * LengthExceptionTest.
  */
 final class LengthExceptionTest extends TestCase
 {
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws LengthException
      *
