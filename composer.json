@@ -1,10 +1,23 @@
 {
     "name": "genial-framework/session",
+    "type": "library",
     "description": "A Simple, Fast, and Secure Session component from Genial!",
+    "authors": [
+        {
+            "name": "Nicholas English",
+            "email": "nenglish0820@outlook.com",
+            "homepage": "https://genial.tech/php/genial-framework/authors/nenglish",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.0",
         "genial-framework/env": "1.*",
         "genial-framework/helper-class": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Genial": "src"
+        }
     }
-  
 }
