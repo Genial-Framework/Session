@@ -1,6 +1,7 @@
 composer.json
 composer.lock
 /vendor/
-README.md
-CONTRIBUTING.md
 /docs/
+README.md
+LICENSE.md
+CONTRIBUTING.md
