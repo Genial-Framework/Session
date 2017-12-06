@@ -22,4 +22,9 @@
             "Genial": "src"
         }
     }
+    "suggests": {
+        "genial-framework/cache": "1.*",
+        "genial-framework/mongodb": "1.*"
+        "genial-framework/database": "1.*"
+    }
 }
