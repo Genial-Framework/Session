@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\LengthException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * LengthExceptionTest
+ * LengthExceptionTest.
  */
-final class LengthExceptionTest extends TestCase {
+final class LengthExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws LengthException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(LengthException::class);
+
         throw new LengthException();
     }
 }
