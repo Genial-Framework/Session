@@ -7,20 +7,26 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\BadFunctionCallException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * BadFunctionCallExceptionTest
+ * BadFunctionCallExceptionTest.
  */
-final class BadFunctionCallExceptionTest extends TestCase {
+final class BadFunctionCallExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(BadFunctionCallException::class);
+
         throw new BadFunctionCallException();
     }
 }
