@@ -1,2 +1,10 @@
 {
+    "name": "genial-framework/session",
+    "description": "A short description of what your package does",
+    "require": {
+        "php": "^7.0",
+        "genial-framework/env": "1.*",
+        "genial-framework/helper-class": "1.*"
+    }
+  
 }
