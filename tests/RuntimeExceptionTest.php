@@ -14,7 +14,7 @@ use Genial\Session\Exception\RuntimeException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * RuntimeExceptionTest
+ * RuntimeExceptionTest.
  */
 final class RuntimeExceptionTest extends TestCase
 {
