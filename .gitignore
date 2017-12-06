@@ -8,3 +8,4 @@ LICENSE.md
 CONTRIBUTING.md
 .coveralls.yml
 phpunit.xml
+/tests/
