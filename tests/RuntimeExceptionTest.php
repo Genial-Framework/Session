@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\RuntimeException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * RuntimeExceptionTest
+ * RuntimeExceptionTest.
  */
-final class RuntimeExceptionTest extends TestCase {
+final class RuntimeExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws RuntimeException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(RuntimeException::class);
+
         throw new RuntimeException();
     }
 }
