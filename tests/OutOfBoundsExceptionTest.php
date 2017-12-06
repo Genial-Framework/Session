@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\OutOfBoundsException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * OutOfBoundsExceptionTest
+ * OutOfBoundsExceptionTest.
  */
-final class OutOfBoundsExceptionTest extends TestCase {
+final class OutOfBoundsExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws OutOfBoundsException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(OutOfBoundsException::class);
+
         throw new OutOfBoundsException();
     }
 }
