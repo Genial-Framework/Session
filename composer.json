@@ -2,6 +2,8 @@
     "name": "genial-framework/session",
     "type": "library",
     "description": "A Simple, Fast, and Secure Session component from Genial!",
+    "homepage": "https://genial.tech/php/genial-framework/components/session",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Nicholas English",
