@@ -7,22 +7,28 @@
  * @copyright Copyright (c) 2017-2017 Genial Technologies USA Inc. (https://genial.tech/)
  * @license   https://genial.tech/license/new-bsd New BSD License
  */
+
 namespace Genial\Session\Tests;
-use PHPUnit\Framework\TestCase;
+
 use Genial\Session\Exception\InvalidArgumentException;
+use PHPUnit\Framework\TestCase;
+
 /**
- * InvalidArgumentExceptionTest
+ * InvalidArgumentExceptionTest.
  */
-final class InvalidArgumentExceptionTest extends TestCase {
+final class InvalidArgumentExceptionTest extends TestCase
+{
     /**
-     * exceptionTest()
+     * exceptionTest().
      *
      * @throws InvalidArgumentException
      *
      * @return void
      */
-    public function exceptionTest() {
+    public function exceptionTest()
+    {
         $this->expectException(InvalidArgumentException::class);
+
         throw new InvalidArgumentException();
     }
 }
