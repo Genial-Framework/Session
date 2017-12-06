@@ -1,7 +1,7 @@
 {
     "name": "genial-framework/session",
     "type": "library",
-    "description": "A Simple, Fast, and Secure Session component from Genial!",
+    "description": "Session component for creating, managing, and deleting sessions",
     "homepage": "https://genial.tech/php/genial-framework/components/session",
     "license": "BSD-3-Clause",
     "authors": [
