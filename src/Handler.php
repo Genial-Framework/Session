@@ -7,12 +7,17 @@
  * @copyright Copyright (c) 2017-2017 Nicholas English <nenglish0820@outlook.com> <https://github.com/Nenglish7>
  * @license   <https://nenglish.me/license/new-bsd> New BSD License
  */
+
 namespace Genial\Session;
+
 use Genial\Session\Exception\BadMethodCallException;
 use Genial\Session\Exception\RuntimeException;
 use Genial\Session\Exception\UnexpectedValueException;
-class Handler extends Manager implements HandlerInterface {
-    public function delete(string $name = null) {
+
+class Handler extends Manager implements HandlerInterface
+{
+    public function delete(string $name = null)
+    {
         if (!$this->exist()) {
             throw new RuntimeException(sprintf(
                 '"%s" detects a non-existent session.',
@@ -36,7 +41,9 @@ class Handler extends Manager implements HandlerInterface {
             unset($_SESSION[$name]);
         }
     }
-    public function get(string $name = null, $defaultReturnValue = null) {
+
+    public function get(string $name = null, $defaultReturnValue = null)
+    {
         if (!$this->exist()) {
             throw new RuntimeException(sprintf(
                 '"%s" detects a non-existent session.',
@@ -59,9 +66,12 @@ class Handler extends Manager implements HandlerInterface {
         if (isset($_SESSION[$name])) {
             return Utils::decode($_SESSION[$name]);
         }
+
         return $defaultReturnValue;
     }
-    public function set(string $name = null, $value) {
+
+    public function set(string $name = null, $value)
+    {
         if (!$this->exist()) {
             throw new RuntimeException(sprintf(
                 '"%s" detects a non-existent session.',
