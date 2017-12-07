@@ -5,7 +5,7 @@ php:
     - '7.2'
 os:
     - linux
-    - windows
+   - windows
 matrix:
     fast_finish: true
 sudo: false
