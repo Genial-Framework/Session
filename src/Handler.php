@@ -4,7 +4,7 @@
  *
  * @link      <https://github.com/Genial-Framework/Genial-Framework> for the canonical source repository
  *
- * @copyright Copyright (c) 2017-2017 Nicholas English <nenglish0820@outlook.com> <https://github.com/Nenglish7>
+ * @copyright Copyright (c) 2017-2017 Genial Framework <https://github.com/Genial-Framework>
  * @license   <https://nenglish.me/license/new-bsd> New BSD License
  */
 
