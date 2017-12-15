@@ -71,7 +71,7 @@ class Handler extends Manager implements HandlerInterface
      *
      * @param string|null $name The name of the session variable.
      * @param mixed|null $defaultReturnValue The default return value if the
-     *     function fails
+     *     function fails.
      *
      * @throws BadMethodCallException If the `name` parameter is missing.
      * @throws RuntimeException If a session does not exist.
