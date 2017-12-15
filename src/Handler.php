@@ -31,7 +31,7 @@ class Handler extends Manager implements HandlerInterface
      *
      * @throws BadMethodCallException   If the `name` parameter is missing.
      * @throws RuntimeException         If a session does not exist.
-     * @throws UnexpectedValueException If he `name` parameter is empty.
+     * @throws UnexpectedValueException If the `name` parameter is empty.
      *
      * @return void
      */
@@ -72,7 +72,7 @@ class Handler extends Manager implements HandlerInterface
      *
      * @throws BadMethodCallException   If the `name` parameter is missing.
      * @throws RuntimeException         If a session does not exist.
-     * @throws UnexpectedValueException If he `name` parameter is empty.
+     * @throws UnexpectedValueException If the `name` parameter is empty.
      *
      * @return mixed Returns the value of the session variable or the default
      *               return value.
@@ -115,7 +115,7 @@ class Handler extends Manager implements HandlerInterface
      *
      * @throws BadMethodCallException   If the `name` parameter is missing.
      * @throws RuntimeException         If a session does not exist.
-     * @throws UnexpectedValueException If he `name` parameter is empty.
+     * @throws UnexpectedValueException If the `name` parameter is empty.
      *
      * @return mixed Returns the value of the session variable or the default
      *               return value.
