@@ -11,6 +11,6 @@ composer require genial-framework/session
 We suggest you use composer as it is quicker and easier. You can direct download the package, but if you do that then you need to create an autoloader to load all the files.
 
 ## Links
-- File issues at https://github.com/Genial-Framework/Dependency-Injection/issues
-- Documentation is at https://github.com/Genial-Framework/Dependency-Injection/tree/master/docs
+- File issues at https://github.com/Genial-Framework/Session/issues
+- Documentation is at https://github.com/Genial-Framework/Session/tree/master/docs
 
