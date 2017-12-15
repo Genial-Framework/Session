@@ -1,8 +1,8 @@
 {
     "name": "genial-framework/session",
     "type": "library",
-    "description": "Genial-Framework/Session - Creating and managing session can't be easier than this!",
-    "homepage": "https://nenglish.me/php/genial-framework/session/",
+    "description": "Session dependent from Genial Framework.",
+    "homepage": "https://github.com/Genial-Framework/Session",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -10,6 +10,11 @@
             "email": "nenglish0820@outlook.com",
             "homepage": "https://github.com/Nenglish7",
             "role": "Developer"
+        },
+        {
+            "name": "Genial Contributors",
+            "homepage": "https://github.com/orgs/Genial-Framework/people",
+            "role": "Contribute"
         }
     ],
     "require": {
