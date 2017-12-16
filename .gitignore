@@ -10,3 +10,4 @@ LICENSE.md
 phpunit.xml
 .travis.yml
 main.bootstrap.php
+change.log
