@@ -18,7 +18,8 @@
         }
     ],
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "genial-framework/cookie": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
