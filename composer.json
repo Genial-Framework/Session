@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "genial-framework/cookie": "^1.0.0"
+        "genial-framework/cookie": "*"
     },
     "autoload": {
         "psr-4": {
