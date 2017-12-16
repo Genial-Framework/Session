@@ -19,6 +19,8 @@ namespace Genial\Session;
 interface HandlerInterface
 {
     public function delete(string $name = null);
+
     public function get(string $name = null, $defaultReturnValue = null);
+
     public function set(string $name = null, $value);
 }
