@@ -14,22 +14,22 @@
 namespace Genial\Session;
 
 use Genial\Session\Exception\RuntimeException;
-use Genial\Session\Exception\BadMethodCallException;
-use Genial\Session\Exception\UnexpectedValueException;
 
 /**
- * HandlerTest
+ * HandlerTest.
  */
 final class HandlerTest extends \PHPUnit\Framework\TestCase
 {
     private $handler;
-    function __construct()
+
+    public function __construct()
     {
-        $handler = new Handler(); 
+        $handler = new Handler();
     }
+
     public function testHandler()
     {
-         $this->expectException(RuntimeException::class);
-         $this->handler->delete('test');
+        $this->expectException(RuntimeException::class);
+        $this->handler->delete('test');
     }
 }
