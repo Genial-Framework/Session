@@ -9,3 +9,4 @@ LICENSE.md
 .coveralls.yml
 phpunit.xml
 .travis.yml
+main.bootstrap.php
