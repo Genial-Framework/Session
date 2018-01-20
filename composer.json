@@ -1,7 +1,7 @@
 {
     "name": "laxove-php/session",
     "type": "library",
-    "description": "Session component for LaxovePHP",
+    "description": "Session component for LaxovePHP.",
     "homepage": "https://github.com/LaxovePHP/Session",
     "license": "BSD-3-Clause",
     "authors": [
@@ -18,7 +18,8 @@
         }
     ],
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "symfony/http-foundation": "*"
     },
     "autoload": {
         "psr-4": {
